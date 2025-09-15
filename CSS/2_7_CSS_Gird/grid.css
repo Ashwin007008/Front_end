@@ -1,0 +1,20 @@
+body{
+    background-color: lightpink;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: 10% 10% auto ;
+    /*grid-template-column: repeat(auto-fit,minmax(200px,1fr));*/
+    gap: 10px;
+    column-gap: 20px;
+    row-gap: 30px;
+    background-color: lightblue;
+    padding: 10px;
+}
+
+p{
+    background-color: lightgreen;
+    text-align: center;
+    font-size: 30px;
+}

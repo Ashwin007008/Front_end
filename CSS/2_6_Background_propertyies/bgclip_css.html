@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Background clip</title>
+<style>
+    div{
+        width: 50%;
+        height: 50%;
+        width: 800px;
+        background-image: url('../not in folder.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        font-size: 100px;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        text-align: center;
+        color: transparent;
+         background-clip: text; /* Standard syntax */
+        -webkit-background-clip: text; /* For Safari and Chrome */
+        
+        }
+</style>
+</head>
+<body>
+    <h1>Background properties in CSS</h1>
+    <p>This is a paragraph to demonstrate various background properties in CSS. The background color is set to lightblue, and a background image is applied from a URL. The image does not repeat and is centered within the element. The background size is set to cover the entire area, and the attachment is fixed, meaning it does not scroll with the content. The background origin is set to padding-box, and the background clip is set to border-box.</p>
+    <div>CSS Backgroung</div>
+</body>
+</html>

@@ -1,0 +1,37 @@
+<h1>Relative Tag in CSS</h1>
+<p>You can style the using this tag with any style tags. We can use Z-index style tage to arrange the style one over one.</p>
+<style>
+    .one{
+        background-color: black;
+        height: 100px;
+        width: 100px;
+        margin: 5px;
+        
+    }
+
+    .two{
+         background-color: rgb(167, 30, 30);
+         height: 100px;
+         width: 100px;
+         margin: 5px;
+         position: relative;
+         left: 50px;
+         top: 50px;
+         z-index: 1;
+    }
+
+     .three{
+         background-color: rgb(35, 184, 171);
+         height: 100px;
+         width: 100px;
+         margin: 5px;
+         position: relative;
+         z-index: 3;
+    }
+    
+
+    
+</style>
+<div class="one"></div>
+<div class="two"></div>
+<div class="three"></div>

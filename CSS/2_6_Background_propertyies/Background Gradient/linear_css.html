@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* Single direction */
+        #to\ right{
+            width: 500px;
+            height: 400px;
+            background: linear-gradient(to right, red, yellow); /* Standard syntax (must be last) */
+            background: -webkit-linear-gradient(left, red, yellow); /* For Safari and Chrome */
+            background: -moz-linear-gradient(left, red, yellow); /* For Firefox */
+            background: -o-linear-gradient(left, red, yellow); /* For Opera */
+            background: -ms-linear-gradient(left, red, yellow); /* For Internet Explorer */
+        }
+        #to\ left{
+            width: 500px;
+            height: 400px;
+            background: linear-gradient(to left, red, yellow); /* Standard syntax (must be last) */
+            background: -webkit-linear-gradient(right, red, yellow); /* For Safari and Chrome */
+            background: -moz-linear-gradient(right, red, yellow); /* For Firefox */
+            background: -o-linear-gradient(right, red, yellow); /* For Opera */
+            background: -ms-linear-gradient(right, red, yellow); /* For Internet Explorer */
+        }
+        #to\ top{
+            width: 500px;
+            height: 400px;
+            background: linear-gradient(to top, red, yellow); /* Standard syntax (must be last) */
+            background: -webkit-linear-gradient(bottom, red, yellow); /* For Safari and Chrome */
+            background: -moz-linear-gradient(bottom, red, yellow); /* For Firefox */
+            background: -o-linear-gradient(bottom, red, yellow); /* For Opera */
+            background: -ms-linear-gradient(bottom, red, yellow); /* For Internet Explorer */
+        }
+        #to\ bottom{
+            width: 500px;
+            height: 400px;
+            background: linear-gradient(to bottom, red, yellow); /* Standard syntax (must be last) */
+            background: -webkit-linear-gradient(top, red, yellow); /* For Safari and Chrome */
+            background: -moz-linear-gradient(top, red, yellow); /* For Firefox */       
+            background: -o-linear-gradient(top, red, yellow); /* For Opera */
+            background: -ms-linear-gradient(top, red, yellow); /* For Internet Explorer */
+        }
+        /*Two Side Grident*/
+        #to\ bottom{
+            width: 500px;
+            height: 400px;
+            background: linear-gradient(to bottom, red, yellow); /* Standard syntax (must be last) */
+            background: -webkit-linear-gradient(top, red, yellow); /* For Safari and Chrome */
+            background: -moz-linear-gradient(top, red, yellow); /* For Firefox */       
+            background: -o-linear-gradient(top, red, yellow); /* For Opera */
+            background: -ms-linear-gradient(top, red, yellow); /* For Internet Explorer */
+        }
+        #to\ bottom\ right{
+            width: 500px;
+            height: 400px;
+            background: linear-gradient(to bottom right, red, yellow); /* Standard syntax (must be last) */
+            background: -webkit-linear-gradient(top left, red, yellow); /* For Safari   and Chrome */
+            background: -moz-linear-gradient(top left, red, yellow); /* For Firefox */       
+            background: -o-linear-gradient(top left, red, yellow); /* For Opera */
+            background: -ms-linear-gradient(top left, red, yellow); /* For Internet Explorer */
+        }
+        #to\ bottom\ left{
+            width: 500px;
+            height: 400px;
+            background: linear-gradient(to bottom left, red, yellow); /* Standard syntax (must be last) */
+            background: -webkit-linear-gradient(top right, red, yellow); /* For Safari and Chrome */
+            background: -moz-linear-gradient(top right, red, yellow); /* For Firefox */       
+            background: -o-linear-gradient(top right, red, yellow); /* For Opera */
+            background: -ms-linear-gradient(top right, red, yellow); /* For Internet Explorer */
+        }
+        /*Mulitiline Grident*/
+        #to\ top\ left{
+            width: 500px;
+            height: 400px;
+            background: linear-gradient(to top left, red, yellow); /* Standard syntax (must be last) */
+            background: -webkit-linear-gradient(bottom right, red, yellow); /* For Safari and Chrome */
+            background: -moz-linear-gradient(bottom right, red, yellow); /* For Firefox */       
+            background: -o-linear-gradient(bottom right, red, yellow); /* For Opera */
+            background: -ms-linear-gradient(bottom right, red, yellow); /* For Internet Explorer */
+        }
+        #to\ top\ right{
+            width: 500px;
+            height: 400px;
+            background: linear-gradient(to top right, red, yellow); /* Standard syntax (must be last) */
+            background: -webkit-linear-gradient(bottom left, red, yellow); /* For Safari and Chrome */
+            background: -moz-linear-gradient(bottom left, red, yellow); /* For Firefox */       
+            background: -o-linear-gradient(bottom left, red, yellow); /* For Opera */   
+            background: -ms-linear-gradient(bottom left, red, yellow); /* For Internet Explorer */
+        }   
+        /*Degree Value*/
+        #Degree{
+            width: 500px;
+            height: 400px;
+            background: linear-gradient(45deg, rgb(27, 142, 18), rgb(53, 23, 245)); /* Standard syntax (must be last) */
+        }
+        #negative\ degree{
+            width: 500px;
+            height: 400px;
+            background: linear-gradient(-90deg, rgb(27, 142, 18), rgb(53, 23, 245)); /* Standard syntax (must be last) */
+           
+        }
+    </style>
+</head>
+<body>
+    <h1>Linear Dradient</h1>
+    <!--sigle line grident-->
+    <div id="to right"></div>
+    <br>
+    <hr>
+    <br>
+    <div id="to left"></div>
+    <br>
+    <hr>
+    <br>
+    <div id="to top"></div>
+    <br>
+    <hr>
+    <br>
+    <div id="to bottom"></div>
+    <br>
+    <hr>
+    <br>
+    <!--multi line grident-->
+    <div id="to bottom right"></div>
+    <br>
+    <hr>
+    <br>
+    <div id="to bottom left"></div>
+    <br>
+    <hr>
+    <br>
+    <div id="to top left"></div>
+    <br>
+    <hr>
+    <br>
+    <div id="to top right"></div>
+   
+    <br>
+    <hr>
+    <br>
+     <!--Degree Value-->
+    <div id="Degree"></div>
+    <br>
+    <hr>
+    <br>    
+    <div id="negative degree"></div>
+    
+
+    
+    
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+    body{
+        background-color: lightblue; /* You can use color names, hex codes, rgb, rgba, hsl, hsla */ /* background-color: #RRGGBB; */    
+        background-image: url('../not\ in\ folder.jpg'); /* URL of the image */ /* You can also use gradients like linear-gradient or radial-gradient */
+        background-repeat: no-repeat; /* repeat, repeat-x, repeat-y, no-repeat */ /* If the image is smaller than the element, it will repeat to fill the space */
+        background-position: center; /* top, bottom, left, right, center, or specific coordinates like '50% 50%' */ /* background-position: 50% 50%; → centers the image both horizontally and vertically */
+        background-size: cover; /* auto, cover, contain, or specific dimensions like '100px 200px' */ /* cover → scales the image to cover the entire element, may crop parts of the image */
+        background-attachment: fixed; /* scroll, fixed, local */ /* fixed → the background image stays in place when you scroll the page */
+        background-origin: padding-box; /* padding-box, border-box, content-box */ /* background-origin: padding-box; → the background image starts from the padding edge */
+        background-clip: border-box; /* border-box, padding-box, content-box */ /* background-clip: border-box; → the background image is visible within the border */
+    }
+    p{
+        width: 50%;
+        height: 50%;
+        padding: 25px;
+        border: 25px dashed rgba(0, 0, 128, 0.251);
+    }    
+</style>
+</head>
+<body>
+    <h1>Background properties in CSS</h1>
+    <p>This is a paragraph to demonstrate various background properties in CSS. The background color is set to lightblue, and a background image is applied from a URL. The image does not repeat and is centered within the element. The background size is set to cover the entire area, and the attachment is fixed, meaning it does not scroll with the content. The background origin is set to padding-box, and the background clip is set to border-box.</p>
+    
+</body>
+</html>

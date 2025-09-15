@@ -1,0 +1,132 @@
+<h1>Form Elements In HTML</h1>
+<fieldset>
+    <legend>Registration Form</legend>
+    <form>
+        <label>Name</label>
+        <input type="text" name="name" placeholder="Enter your name" required>
+        <br><br>
+        <label>Email</label>
+        <input type="email" name="email" placeholder="Enter your email" required>
+        <br><br>
+        <label>Password</label>
+        <input type="password" name="password" placeholder="Enter your password" required>
+        <br><br>
+        <label>DOB</label>
+        <input type="date" name="dob" required>
+        <br><br>
+        <label>DOB Certificate</label>
+        <input type="file" name="dob_cert" required>
+        <br><br>
+        <label>Upload your 5</label>
+        <input type="file" name="5_cert" multiple required>
+        <label>Age</label>
+        <input type="number" name="age" placeholder="Enter your age" required>
+        <br><br>
+        <label name="gen">Gender</label>
+        <input type="radio" name="gen">Male
+        <input type="radio" name="gen">Female
+        <input type="radio" name="gen">Other
+        <br><br>
+        <label>Website</label>
+        <input type="url" name="website" placeholder="Enter your website">
+        <br><br>
+        <label>Year</label>
+        <select name="" id="">
+            <option>1 st year</option>
+            <option>2 nd year</option>
+            <option>3 rd year</option>
+            <option>4 th Year</option>
+        </select>
+        <br><br>
+        <label for="">Select Course</label>
+        <select multiple>
+            <option value="html">HTML</option>
+            <option value="css">CSS</option>
+            <option value="js">JavaScript</option>
+            <option value="react">React</option>
+            <option value="node">Node</option>
+        </select>
+        <br><br>
+        <label>Bio</label>
+        <textarea name="bio" cols="30" rows="10" placeholder="Enter your bio"></textarea>
+        <br><br>
+        <label name="tnc">Terms and Conditions</label>
+        <input type="checkbox" name="tnc" required>Accept Terms and Conditions.
+        <input type="checkbox" name="tnc" required>Subscribe to Newsletter.
+        <br><br>
+        <label>Phone</label>
+        <input type="tel" name="phone" placeholder="Enter your phone number">
+        <br><br> 
+        <label>Password</label> 
+        <input type="password" name="password" placeholder="Enter your password" required>
+        <br><br> 
+        <button>Save</button> 
+        <br><br><br>
+        <input type="submit" value="Register">
+        <input type="reset" value="Reset">
+    </form>
+</fieldset>
+
+
+<br><br>
+<hr>
+<input type="color">
+<br><br>
+<input type="search" placeholder="Search here">
+<br><br>
+<input type="range" min="0" max="100" value="50">
+<br><br>
+<input type="hidden" name="user_id" value="12345">
+<!--(type="hidden")It will hide the input field-->
+<br><br>
+<input type="image" alt="Submit">
+<!--(type="image")It will display an image as a submit button-->
+<br><br>
+<input type="button" value="Click Me">
+<!--(type="button")It will display a button-->
+<br><br>
+<input type="datetime-local">
+<!--(type="datetime-local")It will display a date and time picker-->
+<br><br>
+<input type="month">
+<!--(type="month")It will display a month picker-->
+<br><br>
+<input type="week">
+<!--(type="week")It will display a week picker-->
+<br><br>
+<input type="time">
+<!--(type="time")It will display a time picker-->
+<br><br>
+<input type="tel" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" placeholder="123-45-678">
+<!--(pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}")It will validate the input field-->
+<br><br>
+<input type="email" multiple placeholder="Enter multiple emails separated by commas">
+<!--(multiple)It will allow multiple email addresses to be entered-->
+<br><br>
+<input type="text" maxlength="10" placeholder="Max 10 characters">
+<!--(maxlength="10")It will limit the input field to 10 characters-->
+<br><br>
+<input type="text" minlength="5" placeholder="Min 5 characters">
+<!--(minlength="5")It will require a minimum of 5 characters to be entered-->
+<br><br>
+<input type="text" size="30" placeholder="Input field with size 30">
+<!--(size="30")It will set the width of the input field to 30 characters-->
+<br><br>
+<input type="text" readonly value="This field is read-only">
+<!--(readonly)It will make the input field read-only-->
+<br><br>
+<input type="text" disabled placeholder="This field is disabled">
+<!--(disabled)It will disable the input field-->
+<br><br>
+<input type="text" autofocus placeholder="This field is focused on page load">
+<!--(autofocus)It will focus the input field when the page loads-->
+<br><br>
+<input type="text" placeholder="This field is required" required>   
+<!--(required)It will make the input field required-->
+<br><br>
+<input type="text" placeholder="This field has a default value" value="Default Value">
+<!--(value="Default Value")It will set a default value for the input field-->
+<br><br>
+<input type="text" placeholder="This field has a placeholder" >
+<!--(placeholder="This field has a placeholder")It will display a placeholder text in the input field-->
+<br><br>    

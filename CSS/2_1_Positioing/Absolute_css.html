@@ -1,0 +1,30 @@
+<h1>Absolut tag is CSS</h1>
+<!-- When we decide to give the position absolute tag to any element it will move that element from its original position and place it according to the body tag -->
+<p>When we decide to style the tag , even if that tag was inside the div, table, form tags , while giving that position absolute style it will move only considering the body tag. If you give the relative tag in that div , then it wont escape from the parent tag</p>
+<style>
+    div{
+        margin-top: 200px;
+        margin-left: 100px;
+        border: solid black 2px;
+        width: 200px;
+        height: 100px;
+        
+         /* If you remove this relative tag the h2 tag will move to the top left corner of the body tag  */
+
+    }
+    h2{
+        position: absolute;
+        left: 50px;
+        top: 50px; 
+        /*top: 50px; → pushes the element down from the top edge.
+
+bottom: 50px; → pushes the element up from the bottom edge*/
+    }
+
+
+    
+</style>
+
+<div>
+    <h2>134</h2>
+</div>

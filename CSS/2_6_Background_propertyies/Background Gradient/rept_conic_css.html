@@ -1,0 +1,29 @@
+<style>
+    div{
+        width: 500px;
+        height: 400px;
+        background: repeating-conic-gradient(
+            from 45deg, /* starting angle of the gradient */
+            rgb(0, 255, 183), /* start color */
+            rgb(33, 85, 197) 10%, /* first color stop at 10% */
+            red 20% /* second color stop at 20% */
+        );
+    }
+    #radius{
+        width: 500px;
+        height: 400px;
+        background: repeating-conic-gradient(
+            from 90deg at 50% 50%, /* starting angle and position of the gradient */
+            rgb(0, 255, 183), /* start color */
+            rgb(33, 85, 197) 10%, /* first color stop at 10% */
+            red 20% /* second color stop at 20% */
+        );
+        border-radius: 50%; /* making the div circular */
+    }
+</style>
+<h1>Repeating-conic-gradient</h1>
+<div id="normal"></div>
+<br>
+<hr>
+<br>    
+<div id="radius"></div>

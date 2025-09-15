@@ -1,0 +1,65 @@
+<style>
+div{
+    width: 500px;
+    height: 400px;
+    background: conic-gradient(
+        from 90deg at 50% 50%, /* starting angle and position of the gradient */
+        red, /* start color */
+        yellow, /* first color stop */
+        green, /* second color stop */
+        blue, /* third color stop */
+        red /* end color to create a smooth transition */
+    );
+}
+#radius{
+    width: 500px;
+    height: 400px;
+    background: conic-gradient(
+        from 0deg at 20% 20%, /* starting angle and position of the gradient */
+        red, /* start color */
+        yellow, /* first color stop */
+        green, /* second color stop */
+        blue, /* third color stop */
+        red /* end color to create a smooth transition */
+    );
+}
+#circle{
+    width: 500px;
+    height: 400px;
+    background: conic-gradient(
+        from 90deg at 50% 50%, /* starting angle and position of the gradient */
+        red, /* start color */
+        yellow, /* first color stop */
+        green, /* second color stop */
+        blue, /* third color stop */
+        red /* end color to create a smooth transition */
+    );
+    border-radius: 50%; /* making the div circular */
+}
+#pie\ chart{
+    width: 500px;
+    height: 400px;
+    background: conic-gradient(
+        from 0deg at 50% 50%, /* starting angle and position of the gradient */
+        red 0deg 90deg, /* first slice */
+        yellow 90deg 180deg, /* second slice */
+        green 180deg 270deg, /* third slice */
+        blue 270deg 360deg /* fourth slice */
+    );
+    border-radius: 50%; /* making the div circular */
+}
+</style>
+<h1>Conic-Gradient</h1>
+<div id="normal"></div>
+<br>
+<hr>
+<br>    
+<div id="radius"></div>
+<br>
+<hr>
+<br>
+<div id="circle"></div>
+<br>
+<hr>
+<br>    
+<div id="pie chart"></div>

@@ -1,0 +1,31 @@
+<style>
+    #normal{
+        width: 500px;
+        height: 400px;
+        background-image: url('https://images.unsplash.com/photo-1506744038136-46273834b3fb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8YmFja2dyb3VuZCUyMGltYWdlfGVufDB8fDB8fHww&auto=format&fit=crop&w=600&q=60');
+        background-size: cover;
+        background-blend-mode: normal; /* normal, multiply, screen, overlay, darken, lighten, color-dodge, color-burn, hard-light, soft-light, difference, exclusion, hue, saturation, color, luminosity */
+        
+    }
+    #screen{
+        width: 500px;
+        height: 500px;
+        border: 2px solid black;
+        background-image: linear-gradient(red,yellow) url('../not in folder.jpg');
+        background-size: cover;
+        background-blend-mode: normal; /* normal, multiply, screen, overlay, darken, lighten, color-dodge, color-burn, hard-light, soft-light, difference, exclusion, hue, saturation, color, luminosity */
+        background-blend-mode: screen  ; /* normal, multiply, screen, overlay, darken, lighten, color-dodge, color-burn, hard-light, soft-light, difference, exclusion, hue, saturation, color, luminosity */
+        background-blend-mode: multiply; /* normal, multiply, screen, overlay, darken, lighten, color-dodge, color-burn, hard-light, soft-light, difference, exclusion, hue, saturation, color, luminosity */
+        background-blend-mode: overlay; /* normal, multiply, screen, overlay, darken, lighten, color-dodge, color-burn, hard-light, soft-light, difference, exclusion, hue, saturation, color, luminosity */
+        background-blend-mode: darken; /* normal, multiply, screen, overlay, darken, lighten, color-dodge, color-burn, hard-light, soft-light, difference, exclusion, hue, saturation, color, luminosity */
+    }
+</style>
+<h1>Background Blend</h1>
+
+<div id="normal"></div>
+<br>
+<hr>
+<br>
+<div id="screen"></div>
+
+</div>
