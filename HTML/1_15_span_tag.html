@@ -1,0 +1,19 @@
+<!-- Beginner: Highlighting text -->
+<p>This is a <span style="color: red;">red</span> word.</p>
+<!-- Intermediate: Multiple styles -->
+<p>
+  <span style="background: yellow;">Yellow background</span> and 
+  <span style="font-weight: bold;">bold text</span> in a sentence.
+</p>
+<!-- Advanced: Using CSS classes -->
+<style>
+  .highlight { color: orange; font-size: 24px; }
+  .underline { text-decoration: underline; }
+</style>
+<p>
+  <span class="highlight">Important!</span>
+  <span class="underline">This is underlined.</span>
+</p>
+<!-- Pro: Changing span text with JavaScript -->
+<span id="changeMe">Click the button to change this text!</span>
+<button onclick="document.getElementById('changeMe').textContent = 'Text changed!'">Change Text</button>

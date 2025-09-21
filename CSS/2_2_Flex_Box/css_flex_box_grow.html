@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Flexbox Grow Example</title>
+    <style>
+        .container {
+            display: flex;
+            background: #eee;
+            padding: 20px;
+            gap: 10px;
+        }
+        .box {
+            background: #4e54c8;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+            font-size: 1.2em;
+        }
+        .box:hover {
+         flex-grow: 5;
+         transition: flex-grow 0.3s;
+}
+        .grow1 {
+            flex-grow: 1;
+        }
+        .grow2 {
+            flex-grow: 2;
+        }
+        .grow3 {
+            flex-grow: 3;
+        }
+    </style>
+</head>
+<body>
+    <h2>CSS Flexbox Grow Example</h2>
+    <div class="container">
+        <div class="box grow1">Grow 1</div>
+        <div class="box grow2">Grow 2</div>
+        <div class="box grow3">Grow 3</div>
+    </div>
+    <p>
+        <strong>Explanation:</strong> The boxes grow to fill the space. <br>
+        <code>flex-grow: 1</code> grows a little, <code>flex-grow: 2</code> grows twice as much, and <code>flex-grow: 3</code> grows three times as much!
+    </p>
+</body>
+</html>

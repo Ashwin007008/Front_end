@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Glassmorphism Navbar</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+            background: #e3eafc;
+        }
+        .hero {
+            width: 100%;
+            height: 350px;
+            background: url('https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=800&q=80') center/cover no-repeat;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .Navbar {
+            display: flex;
+            align-items: center;
+            gap: 30px;
+            padding: 20px 40px;
+            background: rgba(40, 60, 30, 0.3);
+            border-radius: 12px;
+            backdrop-filter: blur(30px);
+            box-shadow: 0px 0px 30px rgba(227, 228, 237, 0.37);
+            border: 2px solid rgba(255, 255, 255, 0.18);
+        }
+        .Navbar .icon {
+            font-size: 2em;
+            margin-right: 20px;
+        }
+        .Navbar a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 1.1em;
+            padding: 6px 14px;
+            border-radius: 6px;
+            transition: background 0.2s;
+        }
+        .Navbar a:hover {
+            background: rgba(255,255,255,0.15);
+        }
+    </style>
+</head>
+<body>
+    <div class="hero">
+        <nav class="Navbar">
+            <span class="icon">&#128717;</span>
+            <a href="../2_1_Positioing/fixed_css.html">Home</a>
+            <a href="../2_2_Flex_Box/flex.html">Mobile</a>
+            <a href="../2_3_Media tag/media_tag.html">Tablet</a>
+            <a href="../2_4_Selectors/selectors.html">Laptop</a>
+            <a href="../2_4_Selectors/selectors.html">Help</a>
+        </nav>
+    </div>
+</body>
+</html>
