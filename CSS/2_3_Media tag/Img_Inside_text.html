@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Inside Text</title>
+    <style>
+    
+        .image-text {
+            font-size: 10vw;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            text-align: center;
+            background-image: url("../not in folder.jpg");
+            background-size: cover;
+            background-position: center;
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+            color: transparent;
+            margin: 0;
+            padding: 40px 0;
+            animation: panImage 10s infinite alternate;
+            border: 2px solid red; /* Debug */
+        }
+        @keyframes panImage {
+            0%, 100% { background-position: center 30%; }
+            50% { background-position: center 70%; }
+        }
+    </style>
+</head>
+<body>
+    <h1 class="image-text">Ashwin Samuel</h1>
+</body>
+</html>
