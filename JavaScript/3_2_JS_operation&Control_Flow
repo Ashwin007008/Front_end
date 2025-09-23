@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JavaScript Operations Demo</title>
+    <style>
+        body { font-family: Arial, sans-serif; padding: 20px; }
+        input { margin: 5px; }
+        .result { margin-top: 15px; }
+    </style>
+</head>
+<body>
+    <h2>JavaScript Operations</h2>
+
+    <!--
+    <label>Enter first number: <input type="number" id="num1"></label><br>
+    <label>Enter second number: <input type="number" id="num2"></label><br>
+    <button onclick="showResults()">Calculate</button>
+    <div class="result" id="output"></div>
+
+    <script>
+        function showResults() {
+            const x = Number(document.getElementById('num1').value);
+            const y = Number(document.getElementById('num2').value);
+            let html = `
+                <strong>Addition:</strong> ${x} + ${y} = ${x + y}<br>
+                <strong>Subtraction:</strong> ${x} - ${y} = ${x - y}<br>
+                <strong>Multiplication:</strong> ${x} * ${y} = ${x * y}<br>
+                <strong>Division:</strong> ${x} / ${y} = ${y !== 0 ? (x / y) : 'Cannot divide by zero'}<br>
+                <strong>Modulus:</strong> ${x} % ${y} = ${y !== 0 ? (x % y) : 'Cannot divide by zero'}<br>
+                <strong>Exponent:</strong> ${x} ** ${y} = ${x ** y}
+            `;
+            document.getElementById('output').innerHTML = html;
+        }
+    </script> 
+
+
+
+    <h2>JavaScript Control Flow</h2>
+    <label>Enter your age: <input type="number" id="ageInput"></label>
+    <button onclick="checkAge()">Check Age</button>
+    <div class="result" id="ageOutput"></div> -->
+</body>
+</html>
