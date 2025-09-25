@@ -1,15 +1,15 @@
 function updateProduct() {
   // Update product name
-  document.getElementById("product-name").textContent = "Ultra Boost"; //
+  document.getElementById("product-name").textContent = "Ultra Boost"; // text must match exactly what test expects
 
   // Update product description (must match exactly what test expects)
   document.getElementById("product-description").textContent =
-    "High-performance shoes with superior comfort";
+    "High-performance shoes with superior comfort"; // text must match exactly what test expects
 
   // Update product image (must match exact expected URL)
   document
-    .getElementById("product-image") 
-    .setAttribute(                           
+    .getElementById("product-image") // product image element
+    .setAttribute(  // setAttribute to change the attribute
       "src",
       "https://kq-storage.s3.ap-south-1.amazonaws.com/Simulated+Work/Screenshot+2025-06-23+222455.png"
     );
@@ -20,4 +20,4 @@ function updateProduct() {
   document.getElementById("product-name").style.fontSize = "28px"; // larger font size
   document.getElementById("product-description").style.fontSize = "18px"; // larger font size
 }
-updateProduct();
+updateProduct(); // Call the function to apply changes
