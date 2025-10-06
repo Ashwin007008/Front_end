@@ -46,6 +46,21 @@ console.log("num after *= 2:", num);
 num /= 4; // Equivalent to num = num / 4
 console.log("num after /= 4:", num);
 
+num %= 3; // Equivalent to num = num % 3
+console.log("num after %= 3:", num);
+
+//Bitwise operators
+let p = 5;  // Binary: 0101
+let q = 3;  // Binary: 0011
+
+console.log("p & q (AND):", p & q); // Bitwise AND
+console.log("p | q (OR):", p | q); // Bitwise OR
+console.log("p ^ q (XOR):", p ^ q); // Bitwise XOR
+console.log("~p (NOT):", ~p); // Bitwise NOT
+console.log("p << 1 (Left Shift):", p << 1); // Left Shift
+console.log("p >> 1 (Right Shift):", p >> 1); // Right Shift
+console.log("p >>> 1 (Unsigned Right Shift):", p >>> 1); // Unsigned Right Shift,it works only on positive numbers, if negative number is used, it converts to large positive number
+
 //conditional (ternary) operator
 let age = 20;
 let canVote = (age >= 18) ? "Yes, can vote" : "No, cannot vote";
@@ -54,11 +69,33 @@ console.log("j:", j);
 
 //const k = 80;
 //console.log(k); // 80
-//k = 90; // Error: Assignment to constant variable
+//k = 90; // Error: Assignment to constant variable, cannot reassign const variable
 
 //exprIfTrue : exprIfFalse
 let access = (age < 18) ? "No, cannot access" : "Yes, can access";
 console.log("Access:", access); // Yes, can access
+
+//Conditional (Ternary) Operator
+const age1 = 16;
+const eligibility = (age1 >= 18) ? "Eligible to vote" : "Not eligible to vote";
+console.log("Eligibility:", eligibility); // Not eligible to vote
+
+//Handling null or undefined values
+let user = null;
+let userName = user ? user.name : "Guest";
+console.log("User Name:", userName); // Guest
+//////
+//Handling null or undefined values
+/////
+function welcomeMessage(user) {
+    console.log("welocme "+ user);
+}
+welcomeMessage(); //welocme undefined
+
+
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////////
 
 //typeof x
 console.log("Type of a:", typeof a); // number
@@ -72,3 +109,4 @@ console.log("Type of null:", typeof null); // object (this is a known quirk in J
 let date = new Date();
 console.log("date instanceof Date:", date instanceof Date); // true, because date is an instance of Date
 console.log("date instanceof Object:", date instanceof Object); // true, because all objects are instances of Object
+

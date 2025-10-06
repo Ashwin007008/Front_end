@@ -12,7 +12,7 @@
 <body>
     <h2>JavaScript Operations</h2>
 
-    <!--
+    <!-- Arithmetic Operations -->
     <label>Enter first number: <input type="number" id="num1"></label><br>
     <label>Enter second number: <input type="number" id="num2"></label><br>
     <button onclick="showResults()">Calculate</button>
@@ -39,6 +39,6 @@
     <h2>JavaScript Control Flow</h2>
     <label>Enter your age: <input type="number" id="ageInput"></label>
     <button onclick="checkAge()">Check Age</button>
-    <div class="result" id="ageOutput"></div> -->
+    <div class="result" id="ageOutput"></div> 
 </body>
 </html>

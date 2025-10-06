@@ -93,6 +93,10 @@ let difference = b - a;
 let product = a * b;
 let quotient = b / a;
 let remainder = b % a;
+a++; // increment a by 1
+b--; // decrement b by 1
+
+// Output the results
 
 console.log("a:", a);
 console.log("b:", b);
@@ -101,6 +105,8 @@ console.log("Difference:", difference);
 console.log("Product:", product);
 console.log("Quotient:", quotient);
 console.log("Remainder:", remainder);
+console.log("Incremented a:", a);
+console.log("Decremented b:", b);
 
 ////////////////////////////////////////////////////////////////
 
@@ -111,3 +117,85 @@ var c = 30; // var is function-scoped, avoid using it in modern JS
 console.log("Value of c:", c);
 c = 40; // reassigning var variable
 console.log("New value of c:", c); //answer is 40
+
+//Relational operators
+
+console.log("a > b:", a > b); // Greater than
+console.log("a < b:", a < b); // Less than
+console.log("a >= b:", a >= b); // Greater than or equal to
+console.log("a <= b:", a <= b); // Less than or equal to
+console.log("a == b:", a == b); // Equality
+console.log("a === b:", a === b); // Strict Equality
+console.log("a != b:", a != b); // Inequality
+console.log("a !== b:", a !== b); // Strict Inequality
+
+//////////////////////////////////////////////////////////////////////
+//Equality vs Strict Equality
+
+//strict equality checks both value and type
+//equality checks only value, performs type coercion if types are different
+
+//Example:
+let strNum = "100"; // string
+let num = 100;      // number
+
+console.log("strNum == num:", strNum == num); // true, because == checks only value
+console.log("strNum === num:", strNum === num); // false, because === checks both value and type
+
+//Example:
+let boolTrue = true; // boolean
+let numOne = 1;     // number
+
+console.log("boolTrue == numOne:", boolTrue == numOne); // true, because == checks only value (true is coerced to 1)
+console.log("boolTrue === numOne:", boolTrue === numOne); // false, because === checks both value and type
+
+//Example:
+let boolFalse = false; // boolean
+let numZero = 0;      // number
+
+console.log("boolFalse == numZero:", boolFalse == numZero); // true, because == checks only value (false is coerced to 0)
+console.log("boolFalse === numZero:", boolFalse === numZero); // false, because === checks both value and type
+
+let emptyStr = ""; // empty string
+let numZero2 = 0;  // number
+let falseBool = false; // boolean
+
+console.log("emptyStr == numZero2:", emptyStr == numZero2); // true, because == checks only value ("" is coerced to 0)
+console.log("emptyStr === numZero2:", emptyStr === numZero2); // false, because === checks both value and type
+
+console.log("falseBool == numZero2:", falseBool == numZero2); // true, because == checks only value (false is coerced to 0)
+console.log("falseBool === numZero2:", falseBool === numZero2); // false, because === checks both value and type
+console.log("emptyStr == falseBool:", emptyStr == falseBool); // true, because == checks only value ("" is coerced to false)
+console.log("emptyStr === falseBool:", emptyStr === falseBool); // false, because === checks both value and type
+
+////////////////////////////////////////////////////////////////
+//Special cases with null and undefined
+//Example:
+let nullVar = null;   // null
+let undefinedVar;     // undefined
+
+console.log("nullVar == undefinedVar:", nullVar == undefinedVar); // true, because == considers null and undefined equal
+console.log("nullVar === undefinedVar:", nullVar === undefinedVar); // false, because === checks both value and type
+
+//Example:
+let str = "hello"; // string
+let numVal = 0;   // number
+
+console.log("str == numVal:", str == numVal); // false, because "hello" is not coerced to a number
+console.log("str === numVal:", str === numVal); // false, because === checks both value and type
+
+//Example:
+let arr1 = [1, 2, 3]; // array
+let arr2 = [1, 2, 3]; // another array with same elements
+
+console.log("arr1 == arr2:", arr1 == arr2); // false, because arrays are reference types and have different references
+console.log("arr1 === arr2:", arr1 === arr2); // false, because arrays are reference types and have different references
+
+//Example:
+let obj1 = { key: "value" }; // object
+let obj2 = { key: "value" }; // another object with same properties
+
+console.log("obj1 == obj2:", obj1 == obj2); // false, because objects are reference types and have different references
+console.log("obj1 === obj2:", obj1 === obj2); // false, because objects are reference types and have different references
+
+////////////////////////////////////////////////////////////////
